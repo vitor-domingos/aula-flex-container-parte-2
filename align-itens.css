@@ -1,0 +1,39 @@
+:root {
+  --margin-padrao: 20px;
+ }
+
+
+.container {
+  height: 150px;
+  display: flex;
+text-align: center;
+}
+
+
+.container.flex-start {
+  align-items: flex-start;
+  margin: var(--margin-padrao);
+  --margin-padrao: 40px;
+}
+
+.container.flex-end {
+  align-items: flex-end;
+  margin: var(--margin-padrao);
+  --margin-padrao: 30px;
+}
+
+.container.flex-center {
+  align-items: center;
+}
+
+.container.strecht {
+align-items: stretch;
+}
+
+.baseline .item {
+flex: 1;
+}
+
+.baseline .item:first-child{
+padding-top: 20px;
+}
